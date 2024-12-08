@@ -9,4 +9,10 @@
             Title = title;
         }
     }
+    public class Book2(int id, string name, decimal unitPrice, int unitsInStock, string title) :
+        Product(id, name, unitPrice, unitsInStock)
+    {
+        public string Title => title;
+    }
+
 }
