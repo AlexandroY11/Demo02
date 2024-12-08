@@ -12,6 +12,9 @@
         {
             Discontinued = true;
         }
+
+        public bool GetStatus() =>
+            Discontinued;
     }
 
     //public class Product2(int id, string name, bool discontinued) : Product(id, name, default, default)
