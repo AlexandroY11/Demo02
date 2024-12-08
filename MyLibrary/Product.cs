@@ -1,18 +1,10 @@
 ﻿namespace MyLibrary
 {
-    public class Product
+    public class Product(int id, string name, decimal unitPrice, int unitInStock)
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public decimal UnitPrice { get; set; }
-        public int UnitInStock { get; set; }
-    
-        public Product(int id, string name, decimal unitPrice, int unitInStock) 
-        { 
-            Id = id;
-            Name = name;
-            UnitPrice = unitPrice;
-            UnitInStock = unitInStock;
-        }
+        public int Id => id;
+        public string Name => name;
+        public decimal UnitPrice => unitPrice;
+        public int UnitInStock => unitInStock; 
     }
 }
