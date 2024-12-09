@@ -16,4 +16,5 @@ WriteEmployeeInfo(Miguel);
 void WriteEmployeeInfo(Employee employee)
 {
     Console.WriteLine($"{employee.Name}: {employee.CalculateMonthlyPayment()}");
+    Console.WriteLine($"Days: {employee.GetPaymentDays()}");
 }

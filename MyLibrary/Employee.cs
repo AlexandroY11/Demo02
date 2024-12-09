@@ -8,6 +8,11 @@
         {
             return 12000;
         }
+
+        public virtual int GetPaymentDays()
+        {
+            return 30;
+        }
     }
 
     public class Secretary : Employee
@@ -23,6 +28,9 @@
 
     public class Developer : Employee
     {
-
+        public override int GetPaymentDays()
+        {
+            return 25;
+        }
     }
 }
