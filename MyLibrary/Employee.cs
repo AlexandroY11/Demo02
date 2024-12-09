@@ -9,7 +9,7 @@
             return 12000;
         }
 
-        public virtual int GetPaymentDays()
+        public int GetPaymentDays()
         {
             return 30;
         }
@@ -28,7 +28,7 @@
 
     public class Developer : Employee
     {
-        public override int GetPaymentDays()
+        public new int GetPaymentDays()
         {
             return 25;
         }
